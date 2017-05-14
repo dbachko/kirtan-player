@@ -1,0 +1,119 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.LoopOffIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.LoopOnIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.NextIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.NoIntent",
+      "samples": [
+        "No"
+      ]
+    },
+    {
+      "name": "AMAZON.PauseIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.PreviousIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.RepeatIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.ResumeIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.ShuffleOffIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.ShuffleOnIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StartOverIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": [
+        "Stop",
+        "Enough"
+      ]
+    },
+    {
+      "name": "AMAZON.YesIntent",
+      "samples": [
+        "Yes"
+      ]
+    },
+    {
+      "name": "PlayAudio",
+      "samples": [
+        "play",
+        "begin playing kirtan",
+        "start kirtan",
+        "play kirtan",
+        "to play",
+        "to begin kirtan",
+        "to begin playing kirtan",
+        "to start kirtan",
+        "to play kirtan"
+      ],
+      "slots": [
+        {
+          "name": "kirtanias",
+          "type": "kirtanias",
+          "samples": []
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "kirtanias",
+      "values": [
+        {
+          "name": {
+            "value": "Prabhupada"
+          }
+        },
+        {
+          "name": {
+            "value": "Aindra"
+          }
+        },
+        {
+          "name": {
+            "value": "Srila Prabhupada"
+          }
+        },
+        {
+          "name": {
+            "value": "Aindra Prabhu"
+          }
+        }
+      ]
+    }
+  ]
+}

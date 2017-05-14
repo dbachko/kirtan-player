@@ -1,18 +1,20 @@
-import { helloSvc } from './services/helloSvc';
+import Alexa from 'alexa-sdk';
+import constants from './lib/constants';
+import stateHandlers from './lib/stateHandlers';
+import audioEventHandlers from './lib/audioEventHandlers';
 
 export const kirtanPlayer = (event, context, callback) => {
-
-  const result = helloSvc({name: 'kirtanPlayer'});
-
-  const response = {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: result,
-      input: event,
-    }),
-  };
-
-  callback(null, response);
+  const alexa = Alexa.handler(event, context);
+  alexa.appId = constants.appId;
+  alexa.dynamoDBTableName = constants.dynamoDBTableName;
+  alexa.registerHandlers(
+    stateHandlers.startModeIntentHandlers,
+    stateHandlers.playModeIntentHandlers,
+    stateHandlers.remoteControllerHandlers,
+    stateHandlers.resumeDecisionModeIntentHandlers,
+    audioEventHandlers
+  );
+  alexa.execute();
 };
 
 export default {

@@ -1,0 +1,45 @@
+{
+  "name": "kirtan-player",
+  "version": "0.0.1",
+  "description": "Soundcloud Kirtan Player",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbachko/kirtan-player.git"
+  },
+  "keywords": [
+    "kirtan",
+    "soundloud",
+    "alexa",
+    "serverless",
+    "lambda",
+    "aws",
+    "es6",
+    "babel",
+    "webpack",
+    "jest"
+  ],
+  "author": "dbachko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dbachko/kirtan-player/issues"
+  },
+  "homepage": "https://github.com/dbachko/kirtan-player#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "jest": "^20.0.1",
+    "serverless-webpack": "^1.0.0-rc.4",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.9",
+    "node-soundcloud": "^0.0.6"
+  }
+}
